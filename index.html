@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de Usuários</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="scripts.js" defer></script>
+    <script type="module" src="scripts.js" defer></script>
   </head>
   <body>
     <main>
@@ -13,13 +13,14 @@
         <h1>Cadastre-se aqui</h1>
       <form id="form">
         <input
-          type="email"
+        type="email"
+        name="email"
           id="email"
           placeholder="Cadastre seu melhor email"
           required
         />
-        <input type="text" id="nome" placeholder="Digite seu nome" required>
-        <button type="button" id="cadastrar">Cadastrar</button>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+        <button type="submit" id="cadastrar">Cadastrar</button>
       </form>
       </div>
 
